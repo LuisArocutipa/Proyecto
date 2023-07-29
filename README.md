@@ -126,8 +126,8 @@ https://github.com/LuisArocutipa/Proyecto
 <br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/register.PNG?raw=true" style="width:80%; height:auto"/><br>
 <br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/login.PNG?raw=true" style="width:80%; height:auto"/><br>
 <br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/logout.PNG?raw=true" style="width:80%; height:auto"/><br>
-<br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/regiterHtml.PNG?raw=true" style="width:80%; height:auto"/><br>
-<br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/LoginHtml.PNG?raw=true" style="width:80%; height:auto"/><br>
+<br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/registerHtml.PNG?raw=true" style="width:80%; height:auto"/><br>
+<br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/loginHtml.PNG?raw=true" style="width:80%; height:auto"/><br>
 <br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/header.PNG?raw=true" style="width:80%; height:auto"/><br>
 <br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/iniciar.PNG?raw=true" style="width:80%; height:auto"/><br>
 <br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/registrarse.PNG?raw=true" style="width:80%; height:auto"/><br>
