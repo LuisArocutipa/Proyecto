@@ -95,11 +95,17 @@ https://github.com/LuisArocutipa/Proyecto
 <br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/inicio.PNG?raw=true" style="width:80%; height:auto"/><br>
 <br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/inicio2.PNG?raw=true" style="width:80%; height:auto"/><br>
 - Para iniciar el proyecto se creo el proyecto 'empresa'. Donde se inicializaron las apps 'Tienda', que tiene el modelo Producto, el cual cuenta con sus campos correspondientes como nombre, precio, descripcion e imagen; además de una relación de muchos a muchos con el Modelo User. Además, de una base html para poder desarrollar y mostrar las demas funcionalidades del proyecto; junto con un directorio adicional en el cual estan todos las imagenes requeridas al momento de crear los productos.
-
+<br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/modeloProducto.PNG?raw=true" style="width:80%; height:auto"/><br>
+<br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/index.PNG?raw=true" style="width:80%; height:auto"/><br>
 - Luego, se creó el archivo forms.py para que se puedan agregar nuevos productos usando la clase Meta. Se creó un directorio templates dentro de la app Tienda para que esta sea totalmente independiente del proyecto. Dentro de este directorio, para poder ingresar nuevos productos fue necesario crear un archivo nuevoProducto.html en el cual se usó el csrf_token como restricción de seguridad. Luego se creó la función agregarProducto en el archivo views.py en el cual se validó el formulario para agregar productos y finalmente se añadió la url en el archivo correspondiente.
-
+<br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/forms.PNG?raw=true" style="width:80%; height:auto"/><br>
+<br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/nuevo.PNG?raw=true" style="width:80%; height:auto"/><br>
+<br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/agregar.PNG?raw=true" style="width:80%; height:auto"/><br>
+<br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/formAgregar.PNG?raw=true" style="width:80%; height:auto"/><br>
 - A continuación, se agregó la vista principal de la página, para esto fue necesario crear una funcion vistaInicio en la cual se envian por contexto todos los objetos producto existentes al archivo verProductos.html. En este archivo se hace uso de un ciclo for para poder crear la lista con todos los producto enviados, ademas se le añadió un boton en el cual se pueden ver todos los detalles del objeto como la descripción y más adelante las reseñas de otros usuarios.
-
+<br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/vista.PNG?raw=true" style="width:80%; height:auto"/><br>
+<br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/productos.PNG?raw=true" style="width:80%; height:auto"/><br>
+<br><img src="https://github.com/LuisArocutipa/Proyecto/blob/main/Imagenes/lista.PNG?raw=true" style="width:80%; height:auto"/><br>
 - Finalmente, se implemento una vista individual de cada producto una vez se precione el boton anteriormente mencionado. Se añadió la función verProducto en el cual se envia como argumento la ID del producto para poder tener una ruta especifica para cada objeto. Asi mismo, en el archivo vistaProducto.html se van mostrando todos los campos del producto junto con tres botones que se iran mostrando dependiendo del usuario que este registrado. En caso, no haya un usuario registrado se rediccionara a la página para registrase; si el usuario registrado no es admin, solo tendra la opcion de comprar el producto. Pero, si el usuario que haya hecho click al boton para ver más detalles es administrador, se le mostrarán dos botones adicionales(uno para modificar el producto y otro para eliminarlo).
 
 - Para terminar con la app Tienda se incluyeron todas la urls que fueron creadas especificamente para esta app, de modo que esta sea independiente, a las urls de proyecto principal. Junto con una función para ver los objetos en formato JSON.
