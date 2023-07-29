@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link type="text/css" href="{% static 'css/formulario.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'css/header.css' %}" rel="stylesheet">
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="formulario">
+        <form action="login" method="post">
+            {% csrf_token %}
+            <h1>Iniciar sesión</h1>
+            <input type="text" name="username" placeholder="Usuario"><br>
+            <input type="password" name="password" placeholder="Contraseña"><br>
+            <input type="Submit">
+            <div>
+                {% for message in messages %}
+                <h3> {{message}}</h3>
+                {% endfor %}
+            </div>
+        </form>
+    </div>
+</body>
+</html>

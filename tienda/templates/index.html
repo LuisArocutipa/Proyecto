@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link type="text/css" href="{% static 'css/layout.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'css/formulario.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'css/producto.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Tienda Online</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:8000/">Inicio</a></li>
+                {% if user.is_superuser %}
+                <li><a href="./agregar">Agregar Producto</a></li>
+                {% endif %}
+                {% if user.is_authenticated %}
+                <li><a href="#">Productos comprados</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+        <div class="iniciar">
+            {% if user.is_authenticated %}
+            <h4>Bienvenido, {{ user.first_name }}</h4>
+            <a href="logout">Cerrar Sesión</a>
+            {% else %}
+            <a href="login">Iniciar sesión</a>
+            <a href="register">Registrarse</a>
+            {% endif %}
+        </div>
+    </header>
+
+    <main>
+       {% block content %}
+       {% endblock %}
+    </main>
+
+    <footer>
+        <p>Tienda Online - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

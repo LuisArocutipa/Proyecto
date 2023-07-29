@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block content %}
+<div class="productos">
+<ul>
+    {% for instance in objectList %}
+    <li class="producto">
+        <img src="{{ instance.imagen.url }}" alt="{{ instance.nombre }}">
+        <h2>{{ instance.nombre }}</h2>
+        <h3>$ {{ instance.precio }}</h3>
+        <a href="{% url 'verProducto' instance.id %}" class="boton">Ver detalles</a>
+    </li>
+    {% endfor %}
+</ul>
+</div>
+{% endblock %}
