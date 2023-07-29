@@ -48,9 +48,10 @@ body {
     margin-bottom: 20px;
 }
 
-.info-producto h3 {
-    font-size: 20px;
+.precio {
+    font-size: 30px;
     color: #007bff;
+    text-align: center;
     margin-bottom: 20px;
 }
 

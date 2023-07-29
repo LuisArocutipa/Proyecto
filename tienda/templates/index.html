@@ -14,12 +14,12 @@
         <h1>Tienda Online</h1>
         <nav>
             <ul>
+                {% if user.is_authenticated %}
                 <li><a href="http://127.0.0.1:8000/">Inicio</a></li>
+                <li><a href="#">Productos comprados</a></li>
+                {% endif %}
                 {% if user.is_superuser %}
                 <li><a href="./agregar">Agregar Producto</a></li>
-                {% endif %}
-                {% if user.is_authenticated %}
-                <li><a href="#">Productos comprados</a></li>
                 {% endif %}
             </ul>
         </nav>
