@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el contenedor principal */
+.vistaProducto {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.vistaProducto:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la imagen */
+.imagen-producto {
+    flex: 1;
+    max-width: 100%;
+    margin-right: 20px;
+}
+
+/* Estilos para la información del producto */
+.info-producto {
+    flex: 2;
+}
+
+.info-producto h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.info-producto p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.precio {
+    font-size: 30px;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los botones */
+.botones {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.boton {
+    padding: 10px;
+    background-color: #f0c14b;
+    color: #111;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.boton:hover {
+    background-color: #d89e00;
+}

@@ -1,0 +1,16 @@
+<div class="vistaProducto">
+    <div class="imagen-producto">
+        <img [src]="product.imagen" alt="{{ product.nombre }}">
+    </div>
+    <div class="info-producto">
+        <h1>{{ product.nombre }}</h1>
+        <p>{{ product.descripcion }}</p>
+    </div>
+    <div class="botones">
+        <h1 class="precio">$ {{ product.precio }}</h1>
+        <a href="#" class="boton">Comprar</a>
+        <a href="register" class="boton">Comprar</a>
+        <a href="#" class="boton">Modificar</a>
+        <a href="#" class="boton">Eliminar</a>
+    </div>
+</div>
