@@ -11,3 +11,4 @@ class ProductoForm(forms.ModelForm):
             'oferta',
             'imagen',
         ]
+        
